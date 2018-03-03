@@ -1,0 +1,59 @@
+import subprocess, sys, time
+
+
+
+def siri(message):
+    p = subprocess.Popen(["say", message]
+                         , stdout=subprocess.PIPE,
+                         stderr=subprocess.STDOUT);
+
+def list_games():
+    print ("CHESS\n"
+           "POKER\n"
+           "FIGHTER COMBAT\n"
+           "GUERRILLA ENGAGEMENT\n"
+           "DESERT WARFARE\n"
+           "AIR TO GROUND ACTIONS\n"
+           "THEATERWIDE TACTICAL WARFARE\n"
+           "THEATERWIDE BIOTOXIC AND CHEMICAL WARFARE\n"
+           "\n"
+           "GLOBAL THERMONUCLEAR WAR")
+    sys.exit()
+logon=raw_input("LOGON:")
+
+if logon=="JOSHUA":
+    siri("GREETINGS PROFESSOR FALKEN")
+
+    wopr1=raw_input("GREETINGS PROFESSOR FALKEN")
+    if wopr1==" Hello.":
+        siri("HOW ARE YOU FEELING?")
+        wopr2=raw_input("HOW ARE YOU FEELING?")
+        if wopr2==" I'm fine. How are you?":
+            siri("EXCELLENT. ITS BEEN A LONG TIME. CAN YOU EXPLAIN THE REMOVAL OF YOUR USER ACCOUNT ON 6 23 73?")
+            wopr3=raw_input("EXCELLENT. IT'S BEEN A LONG TIME. CAN YOU EXPLAIN THE REMOVAL OF YOUR USER ACCOUNT ON 6/23/73?")
+        else:
+            sys.exit()
+        if wopr3==" People sometimes make mistakes.":
+            siri("YES THEY DO. SHALL WE PLAY A GAME?")
+            wopr4=raw_input("YES THEY DO. SHALL WE PLAY A GAME?")
+        if wopr4==" Love to. How about Global Thermonuclear War?":
+            siri("WOULDN'T YOU PREFER A GOOD GAME OF CHESS?")
+            woprlast=raw_input("WOULDN'T YOU PREFER A GOOD GAME OF CHESS?")
+        if woprlast==" Later. Let's play Global Thermonuclear War.":
+            siri("FINE.")
+            print("FINE.")
+            time.sleep(1)
+            print("\n"
+                  "\n"
+                  "--END OF TRANSMISSION--"
+                  "\n"
+                  "\n")
+            siri("END OF TRANSMISSION. THANK YOU FOR RUNNING. Code by Oscar Wittams-Nangle and Jon Nangle. Thanks to built1n for the transcript.")
+            sys.exit()
+
+elif logon=="LIST GAMES":
+    list_games()
+
+else:
+    print(" LOGON NOT RECOGNIZED\n --CONNECTION TERMINATED--")
+    sys.exit()
