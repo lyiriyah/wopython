@@ -28,7 +28,12 @@ if logon=="JOSHUA":
     if wopr1==" Hello.":
         siri("HOW ARE YOU FEELING?")
         wopr2=raw_input("HOW ARE YOU FEELING?")
-        if wopr2==" I'm fine. How are you?":
+elif wopr1==" Incorrect identification. I am not Falken. Falken is dead.":
+	siri("I'M SORRY TO HEAR THAT, PROFESSOR.")
+	print("I'M SORRY TO HEAR THAT, PROFESSOR.")
+	siri("soz couldn't be bothered might update later lol")
+	sys.exit()
+	if wopr2==" I'm fine. How are you?":
             siri("EXCELLENT. ITS BEEN A LONG TIME. CAN YOU EXPLAIN THE REMOVAL OF YOUR USER ACCOUNT ON 6 23 73?")
             wopr3=raw_input("EXCELLENT. IT'S BEEN A LONG TIME. CAN YOU EXPLAIN THE REMOVAL OF YOUR USER ACCOUNT ON 6/23/73?")
         else:
